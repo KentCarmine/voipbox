@@ -53,4 +53,8 @@ Voipbox::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  # root :to => "call#index"
+  get "/host/:id", :to => "call#host"
+  get "/call/:id", :to => "call#caller"
 end
